@@ -1,0 +1,257 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    margin: 0%;
+}
+
+/*          navbar          */
+#topnav{
+    display: grid;
+    grid-template-areas: "top1 top2 top3 top4";
+    grid-template-columns : 1fr 3fr 3fr 1fr;
+    height: 7vh;
+    background-color: #1F2937;
+    color: white;
+    
+}
+#logo{
+    grid-area: top2;
+}
+.topnav-links{
+    grid-area: top3;
+    align-self: center;
+    justify-self: right;   
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+/*          hero            */
+#heroGrid{
+    grid-area: top2;
+    align-self: top;
+    color: white;
+    margin-top: 100px;
+}
+#subhero{
+    grid-area: top2;
+    align-self: center;
+    color:white;
+}
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#heroImg{
+    display:grid;
+    grid-area: top3;
+    border: 1px solid;
+    height: 250px;
+    width: 500px;
+    align-self: center;
+    justify-self: right;
+    color: white;
+    background-color:#6D747D;
+    border: none;
+}
+#heroImgTxt{
+    justify-self: center;
+    align-self: center;
+}
+
+#container1{
+    display: grid;
+    grid-template-areas: "top1 top2 top3 top4";
+    grid-template-columns : 1fr 3fr 3fr 1fr;
+    height: 60vh;   
+    background-color: #1F2937;
+}
+/*        vvv second container vvv         */
+
+#container2{
+    display: grid;
+    grid-template-areas: "top1 top2 top3";
+    height: 60vh;   
+    background-color: rgb(221, 221, 221);
+}
+
+#picsHeader{
+    grid-area: top2;
+    text-align: center;
+    align-self: start;
+}
+
+#picBoxes{
+    display: grid;
+    grid-area: top2;
+    grid-template-areas: "box1 box2 box3 box4";
+    grid-template-columns : repeat(4, 1fr);
+    height: 30vh;
+    align-self: center;
+}
+
+#rose{
+    grid-area: box1;
+}
+#violet{
+    grid-area: box2;
+}
+
+#man{
+    grid-area: box3;
+}
+#shoe{
+    grid-area: box4;
+}
+
+.boxtext-align{
+    text-align: center;
+    color:rgba(51, 51, 51, 0.61)
+    
+}
+.specifications{
+    height: 140px;
+    border: 4px solid #4481F2;
+    border-radius: 10%;
+    justify-self: center;
+}
+
+
+/*        vvv third container vvv          */
+#container3{
+    display: grid;
+    grid-template-areas: "top1 top2 top3";
+    grid-template-columns : 1fr 3fr 1fr;
+    height: 60vh;   
+    background-color: #E5E7EB;
+}
+#quoteGrid{
+    grid-area: top2;
+    align-self: center;
+    
+}
+#quote{
+    text-align:center;
+    grid-area: top2;
+    font-size: 35px;
+    align-self: center;
+    font-style: italic;
+}
+
+#subquote{
+    text-align: end;
+    grid-area: top2;
+    font-size:20px;
+    align-self: center;
+    margin-top: 70px;
+}
+
+/*         vvv fourth container vvv            */
+
+#container4{
+    display: grid;
+    grid-template-areas: "top1 top2 top3";
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 60vh;   
+    background-color: rgb(221, 221, 221);
+}
+
+#conclusionBox{ 
+    display: grid;
+    border: 1px solid #4481F2;
+    border-radius: 10px;
+    grid-area: top2; 
+    grid-template-areas: "mid1 mid2 mid3";
+    grid-template-columns: 1fr 4fr 2fr;
+    height: 25vh; 
+    align-self: center;
+    background-color: #4481F2;
+    
+    
+}
+#conclusionHeader{
+    grid-area: mid2;
+    color: white;
+    font-size: 25px;
+    align-self: center;
+    margin-bottom: 50px;
+    
+}
+#conclusionText{
+    grid-area: mid2;
+    color: white;
+    font-size:16px;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.conclusionBtn {
+	box-shadow: 0px 0px 0px 2px #fcfcfc;
+	 
+	background-color:#4481F2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    text-align: center;
+    grid-area: mid3;
+    height: 20px;
+    width: 80px;
+    align-self: center;
+}
+.conclusionBtn:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #5e8af1 100%);
+	background-color:#476e9e;
+}
+.conclusionBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*          vvv footer vvv          */
+
+#footer{
+    display: grid;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: #1F2937;
+    text-align: center;
+    color: white;
+    justify-self: center;
+
+}
+
+#copyright{
+    text-align: center;
+    font-size: 14px;
+}
